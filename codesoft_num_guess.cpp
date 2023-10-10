@@ -1,24 +1,42 @@
 #include <bits/stdc++.h>
 using namespace std;
-int main(){
-    srand(time(0)); // seed random number generator
-    int number = rand() % 100 + 1;  // random number between 1 and 100
-    cout << "Guess My Number Game\n\n";
-    int guess_number, tries = 0;
-    do{
-        cout << "Enter the number :: ";
-        cin >> guess_number;
-        tries += 1;
-        if(guess_number<number){
-            cout << "Your estimate number is too low than secret number" << endl;
-        }else if(guess_number>number){
-            cout << "Your estimate number is too high than secret number" << endl;
-        }else{
-            cout << "\nYour guess is Correct! You got it in " << tries << " " << "try" << endl;
+
+int main()
+{
+    // Initialize random seed
+    srand(time(0));
+
+    // Generate a random number between 1 and 100
+    int randomNumber = rand() % 100 + 1;
+
+    int userGuess;
+    int attempts = 0;
+
+    cout << "Welcome to the Guess My Number Game!\n" << endl;
+    cout << "I've selected a number between 1 and 100. Try to guess it.\n" << endl;
+
+    while (true)
+    {
+        cout << "Enter your guess :: ";
+        cin >> userGuess;
+        attempts++;
+
+        if (userGuess == randomNumber)
+        {
+            cout << "Congratulations! You've guessed the correct number, which is " << randomNumber << "." << endl;
+            cout << "It took you " << attempts << " attempts to guess it." << endl;
+            break;
         }
-    } while (guess_number != number);
+        else if (userGuess < randomNumber)
+        {
+            cout << "Try a higher number." << endl;
+        }
+        else
+        {
+            cout << "Try a lower number." << endl;
+        }
+    }
+
     system("PAUSE");
     return 0;
 }
-
-
