@@ -1,27 +1,25 @@
 #include <iostream>
 using namespace std;
 
-// Driver Code
 int main()
 {
-    cout << "Welcome to the Simple Calculator Task!\n"<< endl;
-    
+    cout << "Welcome to the Simple Calculator Task!\n"
+         << endl;
 
-    char op;           // operator
-    double num1, num2;   // two input numbers
-    char ch;
+    char op;           // Variable to store the operator
+    double num1, num2; // Variables to store two input numbers
+    char ch;           // Variable to handle user's choice for continuation
 
-    while(1)
+    while (true)
     {
         cout << "Enter two operands :: ";
         cin >> num1 >> num2;
 
-        cout << "Enter operator :: ( + , - , * , / )" << " : ";
+        cout << "Enter operator :: ( + , - , * , / ) : ";
         cin >> op;
 
         switch (op)
         {
-
         case '+':
             cout << num1 << " + " << num2 << " = " << num1 + num2 << endl;
             break;
@@ -35,21 +33,30 @@ int main()
             break;
 
         case '/':
-            cout << num1 << " / " << num2 << " = " << num1 / num2 << endl;
+            // Check for division by zero
+            if (num2 != 0)
+            {
+                cout << num1 << " / " << num2 << " = " << num1 / num2 << endl;
+            }
+            else
+            {
+                cout << "Error! Division by zero is not allowed." << endl;
+            }
             break;
 
         default:
-            // If the operator is other than +, -, * or /, error message is shown
-            cout << "Error! operator is not correct";
+            // If the operator is other than +, -, * or /, display an error message
+            cout << "Error! Operator is not correct." << endl;
             break;
         }
 
-        cout << "\nIf you want to exit press 'o', else for continue press any key. :: ";
+        cout << "\nIf you want to exit, press 'o'; otherwise, press any other key to continue: ";
         cin >> ch;
         cout << endl;
-        if(ch == 'o')
+
+        if (ch == 'o')
         {
-            break;
+            break; // Exit the calculator loop if 'o' is entered.
         }
     }
 
