@@ -133,7 +133,7 @@ The `main()` function manages the game loop, allowing two players to take turns 
 
 ## Output
 
-![WhatsApp Image 2023-10-11 at 12 20 23](https://github.com/suren015/CODSOFT/assets/114131620/dbea9a2b-ba87-4e86-9004-5ac8ceaed80c)  ![WhatsApp Image 2023-10-11 at 12 20 36](https://github.com/suren015/CODSOFT/assets/114131620/b18e30b4-8909-4a31-868e-7e8c0e7bf9c4)
+![WhatsApp Image 2023-10-11 at 12 20 23](https://github.com/suren015/CODSOFT/assets/114131620/dbea9a2b-ba87-4e86-9004-5ac8ceaed80c)  ![WhatsApp Image 2023-10-11 at 12 29 41](https://github.com/suren015/CODSOFT/assets/114131620/48dba638-324b-4b4e-8501-823bba34dd12)
 
 
 
