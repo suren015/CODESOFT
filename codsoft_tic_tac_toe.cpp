@@ -75,47 +75,53 @@ int main()
     int player = 1, i, choice;
     char mark;
 
-    do
-    {
-        board();
-        player = (player % 2) ? 1 : 2;
-
-        cout << "Player " << player << ", enter a number:  ";
-        cin >> choice;
-
-        mark = (player == 1) ? 'X' : 'O';
-
-        if (choice >= 1 && choice <= 9 && square[choice] == choice + '0')
+    while(1){
+        do
         {
-            square[choice] = mark;
+            board();
+            player = (player % 2) ? 1 : 2;
+
+            cout << "Player " << player << ", enter a number:  ";
+            cin >> choice;
+
+            mark = (player == 1) ? 'X' : 'O';
+
+            if (choice >= 1 && choice <= 9 && square[choice] == choice + '0')
+            {
+                square[choice] = mark;
+            }
+            else
+            {
+                cout << "Invalid move. Try again.";
+
+                player--;
+                cin.ignore();
+                cin.get();
+            }
+
+            i = checkwin();
+
+            player++;
+        } while (i == -1);
+
+        board();
+
+        if (i == 1)
+        {
+            cout << "Player " << --player << " wins!" << endl;
         }
         else
         {
-            cout << "Invalid move. Try again.";
-
-            player--;
-            cin.ignore();
-            cin.get();
+            cout << "It's a draw!" << endl;
         }
-
-        i = checkwin();
-
-        player++;
-    } while (i == -1);
-
-    board();
-
-    if (i == 1)
-    {
-        cout << "Player " << --player << " wins!";
+        cout << endl;
+        int t;
+        cout << "Do you want to play another Match ? :: If YES press 1 else press 0 --" << endl;
+        cin >> t;
+        if(t == 0){
+            break;
+        }
+        cout << endl;
     }
-    else
-    {
-        cout << "It's a draw!";
-    }
-
-    cin.ignore();
-    cin.get();
-
     return 0;
 }
