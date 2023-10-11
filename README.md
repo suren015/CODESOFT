@@ -38,4 +38,20 @@ A while loop prompts the user for guesses until they correctly identify the targ
 
 ## Conclusion
 
-This README summarizes the creation and functionality of the Number Guessing Game in C++. Feel free to use and modify the code for your educational or entertainment purposes.
+This summarizes the creation and functionality of the Number Guessing Game in C++. Feel free to use and modify the code for your educational or entertainment purposes.
+
+# Task-2 :: Simple Calculator in C++
+
+## Introduction
+
+This is a simple Calculator Task implemented in C++. In this you will learn about C++ program to make simple calculator using switch case i.e. Addition, Subtraction, Multiplication, and Division.
+
+This program uses 4 different cases for performing the different mathematical operation. You have to select different options for addition, subtraction, multiplication, and division.
+
+## Features
+
+- Support for fundamental arithmetic operations, including addition, subtraction, multiplication, and division. 
+- Utilization of a switch-case control structure to determine the chosen arithmetic operation based on user input.
+- Performing the selected arithmetic operation on the input values and displaying the result to the user.
+- Graceful handling of potential errors, such as division by zero or invalid input, to prevent program crashes.
+- Continuous interaction with the user, allowing them to perform multiple calculations without restarting the program.
