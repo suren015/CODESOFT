@@ -96,4 +96,48 @@ This README offers a comprehensive overview of the Simple Calculator Task implem
 ---
 
 
+# Task-3 :: Tic Tac Toe Console Game
+
+## Introduction
+
+Tic Tac Toe Console Game is an implementation of the classic Tic Tac Toe game in C++. It allows two players to take turns marking spaces on a 3x3 grid, with the goal of getting three of their marks in a row. This implementation provides a simple, console-based interface for an enjoyable gaming experience.
+
+## Features
+
+- **Player Interaction:** Players take turns marking spaces as "X" and "O" on the grid.
+- **Win Detection:** The game checks for a win when a player gets three of their marks in a row (horizontally, vertically, or diagonally).
+- **Draw Detection:** If all spaces on the grid are filled without a win, the game is declared a draw.
+- **User-Friendly Interface:** The game's console interface is easy to use and visually appealing.
+- **Player Continuation:** Players can continue to play additional games without restarting the program.
+
+## Code Explanation
+
+### Board Drawing
+
+The `board()` function is responsible for drawing the Tic Tac Toe board on the console. It uses an array to represent the state of the grid and displays it in a user-friendly format.
+
+### Win and Draw Detection
+
+The `checkwin()` function examines the state of the grid to determine if the game is over and if there is a winner. It checks for wins in all possible configurations and also detects when the game ends in a draw.
+
+### Game Loop
+
+The `main()` function manages the game loop, allowing two players to take turns marking spaces on the grid. It ensures the correct player's turn and handles user input.
+
+## How to Play
+
+1. Run the program.
+2. Players take turns entering the number of the square they want to mark (1 to 9).
+3. The game checks for wins or draws and displays the result.
+4. To continue playing, enter 'o' when prompted.
+
+## Conclusion
+
+This README provides an overview of the Tic Tac Toe Console Game implemented in C++. It offers a classic gaming experience with user-friendly features and error detection. Feel free to use and modify the code for educational or practical purposes.
+
+---
+
+You can use this Markdown content as a README.md file for your GitHub repository to document your project.
+
+
 
