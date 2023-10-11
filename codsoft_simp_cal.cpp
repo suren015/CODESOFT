@@ -8,7 +8,7 @@ int main()
     
 
     char op;           // operator
-    float num1, num2;   // two input numbers
+    double num1, num2;   // two input numbers
     char ch;
 
     while(1)
