@@ -131,6 +131,12 @@ The `main()` function manages the game loop, allowing two players to take turns 
 3. The game checks for wins or draws and displays the result.
 4. To continue playing, enter 'o' when prompted.
 
+## Output
+
+![WhatsApp Image 2023-10-11 at 12 20 23](https://github.com/suren015/CODSOFT/assets/114131620/dbea9a2b-ba87-4e86-9004-5ac8ceaed80c)  ![WhatsApp Image 2023-10-11 at 12 20 36](https://github.com/suren015/CODSOFT/assets/114131620/b18e30b4-8909-4a31-868e-7e8c0e7bf9c4)
+
+
+
 ## Conclusion
 
 This README provides an overview of the Tic Tac Toe Console Game implemented in C++. It offers a classic gaming experience with user-friendly features and error detection. Feel free to use and modify the code for educational or practical purposes.
